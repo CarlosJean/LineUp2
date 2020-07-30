@@ -1,11 +1,11 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+ -->
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -14,7 +14,26 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="row dvSearchBusiness">
+      <form class="frmSearchBusiness">
+        <input type="text" placeholder="¿Hacia donde quieres ir?" class="form-control"/>
+      </form>
+    </div>
+    <div id="businessTypes">
+      <div class="container row" id="wrapBusinessType">
+        <div class="col-sm-4 col-md-4 business">
+          <p>Bancos</p>
+        </div>
+        <div class="col-sm-4 col-md-4 business">
+          <p>Telefónica</p>
+        </div>
+        <div class="col-sm-4 col-md-4 business">
+          <p>Agua</p>
+        </div>
+        <div class="col-sm-4 col-md-4 business">
+          <p>Electricidad</p>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
