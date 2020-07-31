@@ -1,3 +1,44 @@
 <ion-app>
+  <!-- Header -->
+  <ion-header></ion-header> 
+  <!-- Header -->
+
   <ion-router-outlet></ion-router-outlet>
+
+  <!-- Footer -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>  
+        <ion-row class="ion-justify-content-evenly">
+          <ion-col class="footerButton" size="4">
+            <ion-button expand="full" fill="clear" color="dark" shape="round">
+              <ion-grid>
+                <ion-row><ion-icon src="./assets/home.svg"></ion-icon></ion-row>
+                <ion-row>Home</ion-row>
+              </ion-grid>
+            </ion-button>
+          </ion-col>
+          <ion-col class="footerButton" size="4">
+            <ion-button expand="full" fill="clear" color="dark" shape="round">
+              <ion-grid>
+                <ion-row><ion-icon src="./assets/star.svg"></ion-icon></ion-row>
+                <ion-row>Favoritos</ion-row>
+              </ion-grid>
+            </ion-button>
+          </ion-col>
+          <ion-col class="footerButton" size="4">
+            <ion-button expand="full" fill="clear" color="dark" shape="round">
+              <ion-grid>
+                <ion-row><ion-icon src="./assets/person-circle.svg"></ion-icon></ion-row>
+                <ion-row>Tú</ion-row>
+              </ion-grid>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+  <!-- Footer -->
+
 </ion-app>
+

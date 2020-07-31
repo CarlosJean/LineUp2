@@ -10,7 +10,7 @@
   flex-flow: column;
   justify-content: center; 
   
-} */
+} 
 
 #container {
 	height: 100%;
@@ -59,7 +59,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 10%;
-} */
+} 
 
 .business{
 	flex: 0 1 23%;
@@ -72,4 +72,25 @@
 	justify-content: space-between;
 	height: 50%;
 	margin-top: 5%;
+}*/
+
+/* ion-header{
+  background: #584699;
+} */
+
+/* .txtSearchPlace{
+  background: white;
+}
+ */
+ion-toolbar{
+  --background:#584699;
+  --color:#fff;
+}
+
+#businessTypes ion-button{
+  --background: #444;
+}
+
+ion-input {
+	box-shadow: 0px 0px 3px black;
 }
