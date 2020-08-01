@@ -11,12 +11,14 @@
       <ion-grid>  
         <ion-row class="ion-justify-content-evenly">
           <ion-col class="footerButton" size="4">
-            <ion-button expand="full" fill="clear" color="dark" shape="round">
-              <ion-grid>
-                <ion-row><ion-icon src="./assets/home.svg"></ion-icon></ion-row>
-                <ion-row>Home</ion-row>
-              </ion-grid>
-            </ion-button>
+            <a [routerLink]="['/home']">
+              <ion-button expand="full" fill="clear" color="dark" shape="round">
+                <ion-grid>
+                  <ion-row><ion-icon src="./assets/home.svg"></ion-icon></ion-row>
+                  <ion-row>Home</ion-row>
+                </ion-grid>
+              </ion-button>
+            </a>
           </ion-col>
           <ion-col class="footerButton" size="4">
             <ion-button expand="full" fill="clear" color="dark" shape="round">
@@ -27,12 +29,14 @@
             </ion-button>
           </ion-col>
           <ion-col class="footerButton" size="4">
+            <a [routerLink]="['/search']">            
             <ion-button expand="full" fill="clear" color="dark" shape="round">
               <ion-grid>
                 <ion-row><ion-icon src="./assets/person-circle.svg"></ion-icon></ion-row>
                 <ion-row>Tú</ion-row>
               </ion-grid>
             </ion-button>
+          </a>
           </ion-col>
         </ion-row>
       </ion-grid>
