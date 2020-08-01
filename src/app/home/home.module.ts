@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { SearchHeaderComponent } from '../shared/search-header/search-header.component';
 
 
 @NgModule({
@@ -12,10 +13,11 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,SearchHeaderComponent,]
 })
 export class HomePageModule {
-  title = 'Home'
+  
 }

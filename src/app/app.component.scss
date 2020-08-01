@@ -1,13 +1,10 @@
 /* Footer */
-.footerButton{
-    text-align: center;
-}
-
-.footerButton ion-row{
-    justify-content: center;
-}
-
 ion-footer a{
     text-decoration: none;
+}
+
+ion-footer ion-button ion-row{
+    justify-content: center;
+    color: #584699;
 }
 /* Footer */
