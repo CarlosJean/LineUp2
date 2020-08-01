@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search-header',
@@ -9,8 +10,12 @@ export class SearchHeaderComponent implements OnInit {
 
   @Input() title:string;
   
-  constructor() { }
+  constructor(private _route:Router) { }
 
   ngOnInit() {}
+
+  search(input:any){
+    this._route.navigate(['/search'],{queryParams:{q:input/* , category: 'Bancos' */}});
+  }
 
 }
