@@ -1,18 +1,18 @@
-ion-toolbar{
-  --background:#584699;
-  --color:#fff;
-}
 
 #businessTiles ion-button{
   --background: #444;
 }
 
 .businessTile {
+	background: #4f5253;	
+	border-radius: 5px;
+	min-width: 50%;
+	text-align: center;
 	height: 100%;
-	background: #4f5253;
-	color: white;
-	display: flex;
-	align-items: center;
-  justify-content: center;
-  border-radius: 5px;
+}
+
+.businessTile a{
+  display: block;
+  text-decoration: none;
+  color: white;
 }

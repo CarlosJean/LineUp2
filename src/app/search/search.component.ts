@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { SearchService } from '../services/data/search.service';
+import { CategoryService } from '../services/data/category.service';
 
 @Component({
   selector: 'app-search',
@@ -8,10 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  title:string = '';
+  title:string = 'Búsqueda';
   searchInput:string = '';
+  list:Array<any>;
 
-  constructor(private _activatedRoute:ActivatedRoute) { }
+  constructor(private _activatedRoute:ActivatedRoute, private _data:SearchService, private _categoryService:CategoryService) { }
 
   ngOnInit() {
     this._activatedRoute.queryParams.subscribe((param)=>{
@@ -19,14 +22,43 @@ export class SearchComponent implements OnInit {
     });    
   }
   
-  search(params:any){
-    this.title = 'Búsqueda';
-    if(params.category != undefined){
-      this.title = params.category.charAt(0).toUpperCase() + params.category.slice(1);
-    } 
+  search(params:any){       
 
-    this.searchInput = params.q;
-    console.log("You searched: "+JSON.stringify(params));
+    if(params.c != undefined){      
+      /* Encontrar la categoria que el usuario seleccionó */
+        let category = this._categoryService.category.find(category => category.id == params.c);
+        this.title   = category.name;   
+
+      /* Encontrar establecimientos por categoría */
+      this.list = this._data.searchData.filter(establishment => establishment.category == params.c);
+    }
+    
+    if(params.q != undefined){
+      this.searchInput = params.q.toLowerCase();
+
+      this.list = this._data.searchData.filter(establishment => {
+        /* Normalización de los strings */
+        let name      = this.normalize(establishment.name);
+        let category  = this.normalize(establishment.category.toString());
+        let address   = this.normalize(establishment.address);
+        /* Normalización de los strings */
+
+        if( name.includes(this.searchInput) || category.includes(this.searchInput) || address.includes(this.searchInput) ) {
+          return establishment
+        }
+      });
+      this.title = 'Búsqueda';
+    }   
+    
+    /* Ordenar por la cantidad menor de personas */
+    this.list.sort((a,b)=>a.numberOfPeople - b.numberOfPeople);
+    /* Ordenar por la cantidad menor de personas */
   }
+
+  normalize(input:string){
+  /* Esta función normaliza los strings para quitarles las tildes, eñes y ponerlos en minúsculas */   
+    return input.normalize('NFD').replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
+  }
+
 
 }

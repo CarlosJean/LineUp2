@@ -7,44 +7,44 @@
   <ion-grid id="businessTiles">
     <ion-row>
       <ion-col size="4" class="ion-text-align-center">
-        <a [routerLink]="['/search']" [queryParams]="{category:'bancos'}">
-          <div class="ion-activatable ripple-parent businessTile" color="dark">          
+        <div class="ion-activatable ripple-parent businessTile" color="dark">          
+          <a [routerLink]="['/search']" [queryParams]="{c:1}">
             Bancos
             <ion-ripple-effect></ion-ripple-effect>          
-          </div>
-        </a>
-      </ion-col>
-      <ion-col size="4" class="ion-text-align-center">
-        <a [routerLink]="['/search']" [queryParams]="{category:'agua'}">
-        <div class="ion-activatable ripple-parent businessTile">
-          Agua
-          <ion-ripple-effect></ion-ripple-effect>
+          </a>
         </div>
-        </a>
       </ion-col>
       <ion-col size="4" class="ion-text-align-center">
-        <a [routerLink]="['/search']" [queryParams]="{category:'telefonicas'}">
-          <div class="ion-activatable ripple-parent businessTile">
+        <div class="ion-activatable ripple-parent businessTile">
+          <a [routerLink]="['/search']" [queryParams]="{c:2}">
+            Agua
+            <ion-ripple-effect></ion-ripple-effect>
+          </a>
+        </div>
+      </ion-col>
+      <ion-col size="4" class="ion-text-align-center">
+        <div class="ion-activatable ripple-parent businessTile">
+          <a [routerLink]="['/search']" [queryParams]="{c:3}">
             Teléfonicas
             <ion-ripple-effect></ion-ripple-effect>
-          </div>
-        </a>
+          </a>
+        </div>
       </ion-col>
       <ion-col size="4" class="ion-text-align-center">
-        <a [routerLink]="['/search']" [queryParams]="{category:'electricidad'}">
-          <div class="ion-activatable ripple-parent businessTile">
+        <div class="ion-activatable ripple-parent businessTile">
+          <a [routerLink]="['/search']" [queryParams]="{c:4}">
             Electricidad
             <ion-ripple-effect></ion-ripple-effect>
-          </div>
-        </a>
+          </a>
+        </div>
       </ion-col>
       <ion-col size="4" class="ion-text-align-center">
-        <a [routerLink]="['/search']" [queryParams]="{category:'peluquerias'}">
-          <div class="ion-activatable ripple-parent businessTile">
+        <div class="ion-activatable ripple-parent businessTile">
+          <a [routerLink]="['/search']" [queryParams]="{c:5}">
             Peluquerías
             <ion-ripple-effect></ion-ripple-effect>
-          </div>
-        </a>
+          </a>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
