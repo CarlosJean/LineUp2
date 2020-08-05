@@ -9,8 +9,8 @@ export class SearchService {
   constructor() { 
 
     this.searchData = [
-      {name:'Salón Karen',address:'c. Edison Ditren',category:5,numberOfPeople:5},
-      {name:'Productos Karen',address:'c. Edison Ditren',category:5,numberOfPeople:3},
+      {id:1,name:'Salón Karen',address:'c. Edison Ditren',category:5,numberOfPeople:5},
+      {id:2,name:'Productos Karen',address:'c. Edison Ditren',category:5,numberOfPeople:3},
     ];
     
   }

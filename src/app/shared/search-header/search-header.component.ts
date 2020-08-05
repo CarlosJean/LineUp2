@@ -15,7 +15,7 @@ export class SearchHeaderComponent implements OnInit {
   ngOnInit() {}
 
   search(input:any){
-    this._route.navigate(['/search'],{queryParams:{q:input/* , category: 'Bancos' */}});
+    this._route.navigate(['/search'],{queryParams:{q:input}});
   }
 
 }

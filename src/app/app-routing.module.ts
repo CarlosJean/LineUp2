@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchModule)
   },
+  {
+    path: 'createTicket/:id',
+    loadChildren: ()=>import('./create-ticket/create-ticket.module').then(m=>m.CreateTicketModule)
+  }
 ];
 
 @NgModule({

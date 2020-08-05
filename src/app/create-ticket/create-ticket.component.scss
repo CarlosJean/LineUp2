@@ -1,0 +1,19 @@
+ion-grid{
+    background: #f0f0f0;
+}
+
+
+#frmCreateTicket {
+	border-radius: 15px 15px 15px 15px;
+	background: white;
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-around;
+	border: 1px solid #d9d9d9;
+}
+
+#frmCreateTicket ion-list{
+    width: 100%;
+}
