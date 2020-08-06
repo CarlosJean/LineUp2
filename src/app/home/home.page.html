@@ -4,9 +4,9 @@
  <!-- Content -->
 <ion-content [fullscreen]="true">
   <!-- Business tiles -->
-  <ion-grid id="businessTiles">
-    <ion-row>
-      <ion-col size="4" class="ion-text-align-center">
+  <ion-grid id="businessTiles" class="h-100">
+    <ion-row class="h-100">
+      <ion-col size="6" class="ion-text-align-center h-25">
         <div class="ion-activatable ripple-parent businessTile" color="dark">          
           <a [routerLink]="['/search']" [queryParams]="{c:1}">
             Bancos
@@ -14,7 +14,7 @@
           </a>
         </div>
       </ion-col>
-      <ion-col size="4" class="ion-text-align-center">
+      <ion-col size="6" class="ion-text-align-center h-25">
         <div class="ion-activatable ripple-parent businessTile">
           <a [routerLink]="['/search']" [queryParams]="{c:2}">
             Agua
@@ -22,7 +22,7 @@
           </a>
         </div>
       </ion-col>
-      <ion-col size="4" class="ion-text-align-center">
+      <ion-col size="6" class="ion-text-align-center h-25">
         <div class="ion-activatable ripple-parent businessTile">
           <a [routerLink]="['/search']" [queryParams]="{c:3}">
             Telecomunicaciones
@@ -30,7 +30,7 @@
           </a>
         </div>
       </ion-col>
-      <ion-col size="4" class="ion-text-align-center">
+      <ion-col size="6" class="ion-text-align-center h-25">
         <div class="ion-activatable ripple-parent businessTile">
           <a [routerLink]="['/search']" [queryParams]="{c:4}">
             Electricidad
@@ -38,7 +38,7 @@
           </a>
         </div>
       </ion-col>
-      <ion-col size="4" class="ion-text-align-center">
+      <ion-col size="6" class="ion-text-align-center h-25">
         <div class="ion-activatable ripple-parent businessTile">
           <a [routerLink]="['/search']" [queryParams]="{c:5}">
             Peluquerías

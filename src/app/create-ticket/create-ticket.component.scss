@@ -3,17 +3,43 @@ ion-grid{
 }
 
 
-#frmCreateTicket {
+#dvCreateTicket {
 	border-radius: 15px 15px 15px 15px;
-	background: white;
-	width: 100%;
+	background: white;	
+    border: 1px solid #d9d9d9;
+    width: 100%;
+}
+
+#dvCreateTicket ion-list{
+    width: 100%;
+}
+
+#frmCreateTicket{    
 	display: flex;
 	flex-flow: column;
 	align-items: center;
-	justify-content: space-around;
-	border: 1px solid #d9d9d9;
+    justify-content: space-around;
+    height: 100%;
 }
 
-#frmCreateTicket ion-list{
-    width: 100%;
+#frmCreateTicket ion-button {
+	--color: #584699;
+	--border-color: #584699;
+}
+
+#frmCreateTicket button{
+    color: #584699;
+    border-color: #584699;
+}
+
+#pNumberOfPeople{
+    color: #584699;
+}
+
+#spnNumberOfPeople{
+    font-size: 500%;
+}
+
+#pAproximateTime{
+    color: gray;
 }

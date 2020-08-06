@@ -6,19 +6,22 @@
 <ion-content>
   <ion-grid class="h-100">
     <ion-row class="h-50 justify-content-center align-items-center">
-      <p>Hay {{business.numberOfPeople}} personas delante de tí. (aprox.)</p>
+      <p id="pNumberOfPeople"><span id="spnNumberOfPeople">{{business.numberOfPeople}}</span> personas</p>
+      <p id="pAproximateTime">Le atienden en 30 minutos, aproximadamente.</p>
     </ion-row>
     <ion-row class="h-50">
-      <div id="frmCreateTicket">
-        <ion-list>
-          <ion-item>
-            <ion-label>Servicios</ion-label>
-            <ion-select>
-              <ion-select-option *ngFor="let service of business.services" value="service.id">{{service.name}}</ion-select-option>
-            </ion-select>
-          </ion-item>
-        </ion-list>
-        <ion-button class="col-md-12">Crear ticket</ion-button>
+      <div id="dvCreateTicket">
+        <form id="frmCreateTicket" (ngSubmit)="create()">
+          <ion-list>
+            <ion-item>
+              <ion-label>Servicios</ion-label>
+              <ion-select okText="Okay" cancelText="Cancelar" name="service">
+                <ion-select-option *ngFor="let service of business.services" [value]="service.id">{{service.name}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+          <ion-button class="col-md-12" type="submit" fill="outline" expand="block">Crear ticket</ion-button>
+        </form>
       </div>      
     </ion-row>
   </ion-grid>
