@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { CreateTicketComponent } from './create-ticket.component';
+import { ShiftDetailsComponent } from './shift-details.component';
 
-describe('CreateTicketComponent', () => {
-  let component: CreateTicketComponent;
-  let fixture: ComponentFixture<CreateTicketComponent>;
+describe('ShiftDetailsComponent', () => {
+  let component: ShiftDetailsComponent;
+  let fixture: ComponentFixture<ShiftDetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CreateTicketComponent ],
+      declarations: [ ShiftDetailsComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(CreateTicketComponent);
+    fixture = TestBed.createComponent(ShiftDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
