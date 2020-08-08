@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { SearchHeaderComponent } from '../shared/search-header/search-header.component';
+import { SearchHeaderComponent } from '../../shared/search-header/search-header.component';
 
 
 @NgModule({

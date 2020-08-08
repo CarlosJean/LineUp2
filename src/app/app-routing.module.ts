@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { ShiftCreateComponent } from './shifts/shift-create/shift-create.component';
+import { ShiftCreateComponent } from './modules/shifts/shift-create/shift-create.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./modules/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'search',
-    loadChildren: () => import('./search/search.module').then( m => m.SearchModule)
+    loadChildren: () => import('./modules/search/search.module').then( m => m.SearchModule)
   },
   /* {
     path: 'createTicket/:id',
@@ -27,7 +27,7 @@ const routes: Routes = [
   },  */
   {
     path:'shifts',
-    loadChildren: ()=>import('./shifts/shifts.module').then(m=>m.ShiftsModule)
+    loadChildren: ()=>import('./modules/shifts/shifts.module').then(m=>m.ShiftsModule)
   }
 ];
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ShiftService } from '../../services/data/shift.service';
+import { ShiftService } from '../../../services/data/shift.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CategoryService } from '../services/data/category.service';
-import { BusinessService } from '../services/data/business.service';
+import { CategoryService } from '../../services/data/category.service';
+import { BusinessService } from '../../services/data/business.service';
 
 @Component({
   selector: 'app-search',
