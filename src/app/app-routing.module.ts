@@ -20,13 +20,13 @@ const routes: Routes = [
     path: 'createTicket/:id',
     loadChildren: ()=>import('./create-ticket/create-ticket.module').then(m=>m.CreateTicketModule)
   }, */
-  {
+  /* {
     path:'shifts/create/:id',
     component:ShiftCreateComponent
     //loadChildren: ()=>import('./shifts/shifts.module').then(m=>m.ShiftsModule)
-  }, 
+  },  */
   {
-    path:'shifts/:userId',
+    path:'shifts',
     loadChildren: ()=>import('./shifts/shifts.module').then(m=>m.ShiftsModule)
   }
 ];

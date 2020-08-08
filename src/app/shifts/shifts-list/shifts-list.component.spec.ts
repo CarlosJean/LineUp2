@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ShiftsComponent } from './shifts.component';
+import { ShiftsListComponent } from './shifts-list.component';
 
-describe('ShiftsComponent', () => {
-  let component: ShiftsComponent;
-  let fixture: ComponentFixture<ShiftsComponent>;
+describe('ShiftsListComponent', () => {
+  let component: ShiftsListComponent;
+  let fixture: ComponentFixture<ShiftsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ShiftsComponent ],
+      declarations: [ ShiftsListComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ShiftsComponent);
+    fixture = TestBed.createComponent(ShiftsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

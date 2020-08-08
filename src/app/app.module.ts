@@ -12,7 +12,7 @@ import { ShiftCreateComponent } from './shifts/shift-create/shift-create.compone
 import { SearchHeaderComponent } from './shared/search-header/search-header.component';
 
 @NgModule({
-  declarations: [AppComponent,SearchHeaderComponent,ShiftCreateComponent],
+  declarations: [AppComponent,/* SearchHeaderComponent,ShiftCreateComponent */],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

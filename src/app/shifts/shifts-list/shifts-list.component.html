@@ -6,7 +6,7 @@
 <ion-content>
     <ion-list>
         <ion-item *ngFor="let shift of shifts" class="ion-activatable ripple-parent" detail>
-            <a [routerLink]="['./detalle-turno', shift.id]">
+            <a [routerLink]="['../../details', shift.id]">
                 <ion-grid>
                     <ion-row>{{shift.ticketNumber}}</ion-row>
                     <ion-row>{{shift.business.name}}</ion-row>

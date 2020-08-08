@@ -16,13 +16,8 @@ export class ShiftCreateComponent implements OnInit {
 
   ngOnInit() {   
 
-    /* let paramId = this._activatedRoute.snapshot.params.id;
-    console.log('Param ID: '+paramId); 
-    this.business = this.getBusiness(paramId);
-    console.log(this.business); */
     this._activatedRoute.params.subscribe(param =>{ 
-      this.business= this.getBusiness(param.id);    
-      console.log = this.business;
+      this.business= this.getBusiness(param.id);  
     });
   }
 
@@ -34,7 +29,7 @@ export class ShiftCreateComponent implements OnInit {
     const alert = await this._alert.create({
       header:'Aviso',
       message:`Su turno en ${this.business.name} ha sido reservado.`,
-      buttons: [{text:'Ver mis turnos'/* ,handler:()=>{this.goToShiftsComponent() }*/},
+      buttons: [{text:'Ver mis turnos' ,handler:()=>{this.goToShiftsComponent() }},
       'Ok']
     });
 
@@ -42,7 +37,7 @@ export class ShiftCreateComponent implements OnInit {
   }
 
   goToShiftsComponent(){
-    this.router.navigate(['/shifts/1']);
+    this.router.navigate(['../../list',1],{relativeTo: this._activatedRoute});
   }
 
 }
