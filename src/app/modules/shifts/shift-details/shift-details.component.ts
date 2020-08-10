@@ -16,6 +16,7 @@ export class ShiftDetailsComponent implements OnInit {
   ngOnInit() {
     this._activatedRoute.params.subscribe(param=>{
       this.shift = this._shifts.shifts.find(shift => shift.id == param.idTurno);
+      console.log(this.shift);
     });
   }
 

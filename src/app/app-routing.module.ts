@@ -13,18 +13,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'search',
-    loadChildren: () => import('./modules/search/search.module').then( m => m.SearchModule)
+    path: 'user',
+    loadChildren: () => import('./modules/user/user.module').then( m => m.UserModule)
   },
-  /* {
-    path: 'createTicket/:id',
-    loadChildren: ()=>import('./create-ticket/create-ticket.module').then(m=>m.CreateTicketModule)
-  }, */
-  /* {
-    path:'shifts/create/:id',
-    component:ShiftCreateComponent
-    //loadChildren: ()=>import('./shifts/shifts.module').then(m=>m.ShiftsModule)
-  },  */
   {
     path:'shifts',
     loadChildren: ()=>import('./modules/shifts/shifts.module').then(m=>m.ShiftsModule)

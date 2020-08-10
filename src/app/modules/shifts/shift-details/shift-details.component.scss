@@ -1,0 +1,21 @@
+#dvShift {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+#ticketNumber{
+    font-size: 400%;
+    color: #584699;
+}
+
+p{
+    color: gray;
+}
+
+#btnMoreInformation{
+    --color:#584699;
+    --border-color: #584699;
+}
