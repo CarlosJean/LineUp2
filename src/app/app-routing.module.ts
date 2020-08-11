@@ -13,13 +13,17 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'user',
-    loadChildren: () => import('./modules/user/user.module').then( m => m.UserModule)
+    path:'search',
+    loadChildren:()=>import('./modules/search/search.module').then(m=>m.SearchModule)
   },
   {
     path:'shifts',
     loadChildren: ()=>import('./modules/shifts/shifts.module').then(m=>m.ShiftsModule)
-  }
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./modules/user/user.module').then( m => m.UserModule)
+  },
 ];
 
 @NgModule({
