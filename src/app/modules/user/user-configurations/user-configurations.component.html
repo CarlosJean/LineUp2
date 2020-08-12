@@ -1,0 +1,21 @@
+<!-- Header -->
+<app-header title="Configuraciones de usuario"></app-header>
+<!-- Header -->
+<!-- Content -->
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Jean Carlos Holguín Berihuete</ion-label>
+    </ion-item>
+    <ion-item button detail>
+      <a [routerLink]="['./change-password']">Cambiar contraseña</a>
+    </ion-item>
+    <ion-item button detail>
+      <a [routerLink]="['./user-data']">Editar perfil</a>
+    </ion-item>
+    <ion-item (click)="sendRecuperationEmail()">
+      <ion-label>Olvidé mi contraseña</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<!-- Content -->
