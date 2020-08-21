@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Storage } from '@ionic/storage'
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   
-  constructor() {}
+  constructor(private storage:Storage) {
+    this.showTabBar();
+  }
 
-  ngOnInit(){
+  ngOnInit(){}
+
+  showTabBar(){
+    document.querySelector('ion-tab-bar').style.display= "flex";
+    this.storage.set('name','Jean Carlos Holguin');
+
+    
   }
 }

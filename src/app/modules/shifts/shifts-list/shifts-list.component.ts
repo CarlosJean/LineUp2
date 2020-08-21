@@ -16,7 +16,7 @@ export class ShiftsListComponent implements OnInit {
 
   ngOnInit() {
     this._activatedRoute.params.subscribe(param=>{
-      this.shifts = this._shifts.shifts.filter(shift => shift.userId == param.userId);
+      this.shifts = this._shifts.shifts.filter(shift => shift.userId == 1/* param.userId */);
     });
   }
   

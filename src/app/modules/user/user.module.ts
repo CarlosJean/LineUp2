@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { IonicStorageModule } from '@ionic/storage';
+
 
 import { UserRoutingModule } from './user-routing.module';
 import { HeaderComponent } from 'src/app/shared/header/header.component';
@@ -12,7 +14,8 @@ import { UserConfigurationsComponent } from './user-configurations/user-configur
   declarations: [HeaderComponent,UserDataComponent,ChangePasswordComponent,UserConfigurationsComponent],
   imports: [
     CommonModule,
-    UserRoutingModule
+    UserRoutingModule,
+    IonicStorageModule.forRoot()
   ]
 })
 export class UserModule { }

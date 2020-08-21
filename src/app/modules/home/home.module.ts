@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import { SearchHeaderComponent } from '../../shared/search-header/search-header.component';
 
+import { IonicStorageModule } from '@ionic/storage';
 
 @NgModule({
   imports: [
@@ -14,9 +15,9 @@ import { SearchHeaderComponent } from '../../shared/search-header/search-header.
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    
+    IonicStorageModule.forRoot()
   ],
-  declarations: [HomePage,SearchHeaderComponent,]
+  declarations: [HomePage,SearchHeaderComponent]
 })
 export class HomePageModule {
   

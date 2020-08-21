@@ -37,7 +37,7 @@ export class ShiftCreateComponent implements OnInit {
   }
 
   goToShiftsComponent(){
-    this.router.navigate(['../../list',1],{relativeTo: this._activatedRoute});
+    this.router.navigate(['../../list'/* ,1 */],{relativeTo: this._activatedRoute});
   }
 
 }
