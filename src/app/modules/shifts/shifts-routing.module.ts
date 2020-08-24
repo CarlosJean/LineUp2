@@ -8,7 +8,6 @@ import { ShiftsListComponent } from './shifts-list/shifts-list.component';
 
 const routes: Routes = [
   {path:'list',component:ShiftsListComponent},
-  //{path:'shifts',redirectTo:'list',pathMatch:'full'},
   {path:'',redirectTo:'list',pathMatch:'full'},
   {path:'create/:id',component:ShiftCreateComponent},
   {path:'details/:idTurno',component:ShiftDetailsComponent},

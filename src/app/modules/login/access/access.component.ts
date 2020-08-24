@@ -15,7 +15,6 @@ export class AccessComponent implements OnInit {
   }
 
   hideTabBar(){
-    //document.querySelector('ion-tab-bar').style.visibility= "hidden";
     document.querySelector('ion-tab-bar').style.display= "none";
   }
   access(){

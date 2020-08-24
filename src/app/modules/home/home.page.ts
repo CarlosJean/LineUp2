@@ -16,8 +16,7 @@ export class HomePage {
 
   showTabBar(){
     document.querySelector('ion-tab-bar').style.display= "flex";
-    this.storage.set('name','Jean Carlos Holguin');
-
-    
+    //document.querySelector('ion-tab-bar').style.display= "none";
+    this.storage.set('name','Jean Carlos Holguin');    
   }
 }

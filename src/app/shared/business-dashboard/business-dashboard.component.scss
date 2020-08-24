@@ -1,0 +1,27 @@
+ion-grid{
+    height:100%
+}
+
+ion-row{
+    height: 100%;
+}
+
+ion-col a{
+    text-decoration: none;
+}
+
+ion-card{
+    width: 100%;
+    height:100%;
+}
+
+ion-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+ion-card p{
+    font-size: 2vw;
+}

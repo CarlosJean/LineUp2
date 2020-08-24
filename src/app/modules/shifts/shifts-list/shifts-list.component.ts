@@ -9,15 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ShiftsListComponent implements OnInit {
 
-  screenTitle = 'Mis turnos';
-  shifts:Array<any>;
+  constructor() { }
 
-  constructor(private _shifts:ShiftService, private _activatedRoute:ActivatedRoute) { }
-
-  ngOnInit() {
-    this._activatedRoute.params.subscribe(param=>{
-      this.shifts = this._shifts.shifts.filter(shift => shift.userId == 1/* param.userId */);
-    });
-  }
+  ngOnInit() {}
   
 }

@@ -1,53 +1,13 @@
 <!-- Header -->
-<app-search-header title="Bienvenido"></app-search-header>
+<app-header title="Bienvenido"  [searchInput]=false></app-header>
  <!-- Header -->
  <!-- Content -->
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true">  
   <!-- Business tiles -->
-  <ion-grid id="businessTiles" class="h-100">
-    <ion-row class="h-100">
-      <ion-col size="6" class="ion-text-align-center h-25">
-        <div class="ion-activatable ripple-parent businessTile" color="dark">          
-          <a [routerLink]="['/search']" [queryParams]="{c:1}">
-            Bancos
-            <ion-ripple-effect></ion-ripple-effect>          
-          </a>
-        </div>
-      </ion-col>
-      <ion-col size="6" class="ion-text-align-center h-25">
-        <div class="ion-activatable ripple-parent businessTile">
-          <a [routerLink]="['/search']" [queryParams]="{c:2}">
-            Agua
-            <ion-ripple-effect></ion-ripple-effect>
-          </a>
-        </div>
-      </ion-col>
-      <ion-col size="6" class="ion-text-align-center h-25">
-        <div class="ion-activatable ripple-parent businessTile">
-          <a [routerLink]="['/search']" [queryParams]="{c:3}">
-            Telecomunicaciones
-            <ion-ripple-effect></ion-ripple-effect>
-          </a>
-        </div>
-      </ion-col>
-      <ion-col size="6" class="ion-text-align-center h-25">
-        <div class="ion-activatable ripple-parent businessTile">
-          <a [routerLink]="['/search']" [queryParams]="{c:4}">
-            Electricidad
-            <ion-ripple-effect></ion-ripple-effect>
-          </a>
-        </div>
-      </ion-col>
-      <ion-col size="6" class="ion-text-align-center h-25">
-        <div class="ion-activatable ripple-parent businessTile">
-          <a [routerLink]="['/search']" [queryParams]="{c:5}">
-            Peluquerías
-            <ion-ripple-effect></ion-ripple-effect>
-          </a>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+  <!-- <app-business-tiles></app-business-tiles> -->    
   <!-- Business tiles -->
+  <!-- Business dashboard -->
+  <app-business-dashboard></app-business-dashboard>    
+  <!-- Business dashboard -->
 </ion-content>
 <!-- Content -->
