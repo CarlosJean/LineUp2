@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ShiftDetailsComponent } from './shift-details/shift-details.component';
 import { ShiftCreateComponent } from './shift-create/shift-create.component';
 import { ShiftsListComponent } from './shifts-list/shifts-list.component';
+import { PendingShiftsComponent } from './pending-shifts/pending-shifts.component';
 
 
 const routes: Routes = [
@@ -11,11 +12,12 @@ const routes: Routes = [
   {path:'',redirectTo:'list',pathMatch:'full'},
   {path:'create/:id',component:ShiftCreateComponent},
   {path:'details/:idTurno',component:ShiftDetailsComponent},
-
+  {path:'pending-shifts',component:PendingShiftsComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
+  
 })
 export class ShiftsRoutingModule { }

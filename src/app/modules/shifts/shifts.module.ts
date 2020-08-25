@@ -9,10 +9,11 @@ import { ShiftsListComponent } from './shifts-list/shifts-list.component';
 import { HeaderComponent } from 'src/app/shared/header/header.component';
 import { CustomerShiftsComponent } from 'src/app/shared/customer-shifts/customer-shifts.component';
 import { BusinessShiftsComponent } from 'src/app/shared/business-shifts/business-shifts.component';
+import { PendingShiftsComponent } from './pending-shifts/pending-shifts.component';
 
 
 @NgModule({
-  declarations: [HeaderComponent,ShiftsListComponent,ShiftDetailsComponent,ShiftCreateComponent,CustomerShiftsComponent,BusinessShiftsComponent],
+  declarations: [HeaderComponent,ShiftsListComponent,ShiftDetailsComponent,ShiftCreateComponent,CustomerShiftsComponent,BusinessShiftsComponent,PendingShiftsComponent],
   imports: [
     CommonModule,
     ShiftsRoutingModule,

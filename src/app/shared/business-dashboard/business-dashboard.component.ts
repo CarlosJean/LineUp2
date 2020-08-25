@@ -9,6 +9,11 @@ export class BusinessDashboardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.hideTabBar();
+  }
 
+  hideTabBar(){
+    document.querySelector('ion-tab-bar').style.display= "none";
+  }
 }
