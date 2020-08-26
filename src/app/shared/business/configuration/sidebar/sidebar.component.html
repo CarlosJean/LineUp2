@@ -1,9 +1,24 @@
 <ion-menu side="start" menu-id="first" content-id="main">
     <ion-content>
       <ion-list>
-        <ion-item>Usuario</ion-item>
-        <ion-item>Servicios</ion-item>
-        <ion-item>Módulos</ion-item>
+        <ion-item-group>
+          <ion-item-divider>
+            <ion-item lines="none"><ion-avatar slot="start"><ion-icon name="people-sharp"></ion-icon></ion-avatar><ion-label>Usuarios</ion-label></ion-item>
+          </ion-item-divider>
+          <ion-item button><a [routerLink]="['/business/user']">Administración usuarios</a></ion-item>
+        </ion-item-group>
+        <ion-item-group>
+          <ion-item-divider>
+            <ion-item lines="none"><ion-avatar slot="start"><ion-icon name="construct-sharp"></ion-icon></ion-avatar><ion-label>Servicios</ion-label></ion-item>
+          </ion-item-divider>
+          <ion-item>Nuevo servicio</ion-item>
+        </ion-item-group>
+        <ion-item-group>
+          <ion-item-divider>
+            <ion-item lines="none"><ion-avatar slot="start"><ion-icon name="layers-sharp"></ion-icon></ion-avatar><ion-label>Módulos</ion-label></ion-item>    
+          </ion-item-divider>
+          <ion-item>Nuevo módulo</ion-item>
+        </ion-item-group>                   
       </ion-list>
     </ion-content>
 </ion-menu>

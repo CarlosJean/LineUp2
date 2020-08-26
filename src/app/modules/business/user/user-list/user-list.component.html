@@ -1,0 +1,45 @@
+<!-- Header -->
+<app-header title="Administración de usuarios"></app-header>
+<!-- Header -->
+<!-- Content -->
+<ion-content>
+    <app-sidebar [menuOpen]=false></app-sidebar>
+    <ion-toolbar class="justify-content-end">
+        <ion-label><a [routerLink]="['../user-create']">Crear un nuevo usuario</a></ion-label>
+    </ion-toolbar>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr><th>Nombres</th><th>Apellidos</th><th>Puesto</th><th>usuario</th><th>Acciones</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Jean Carlos
+                </td>
+                <td>
+                    Holguin Berihuete
+                </td>
+                <td>
+                    <ion-select placeholder="Seleccione un puesto" ok-text="Seleccionar" cancel-text="Cancelar">
+                        <ion-select-option>A</ion-select-option>
+                        <ion-select-option>B</ion-select-option>
+                        <ion-select-option>C</ion-select-option>
+                    </ion-select>
+                </td>
+                <td>
+                    9df4ds9f494d9f48
+                </td>
+                <td>
+                    <ion-buttons>
+                        <ion-button>Eliminar</ion-button>
+                        |
+                        <ion-button>Actualizar</ion-button>
+                    </ion-buttons>
+                </td>
+            </tr>
+        </tbody>
+      </table>
+</ion-content>
+<!-- Content -->
+
+

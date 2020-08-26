@@ -1,0 +1,51 @@
+<!-- Header -->
+<app-header title="Crear nuevo usuario"></app-header>
+<!-- Header -->
+<!-- Content -->
+<ion-content>
+  <app-sidebar [menuOpen]="false"></app-sidebar>
+  <form>
+    <ion-grid>
+      <ion-row>
+        <ion-item>
+          <ion-label position="floating">Cédula</ion-label>
+          <ion-input clear-input></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Nombres</ion-label>
+            <ion-input clear-input></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Apellidos</ion-label>
+            <ion-input clear-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input clear-input></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label position="floating">Confirmar contraseña</ion-label>
+            <ion-input clear-input></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row class="justify-content-center">
+        <ion-col size="3">
+          <ion-button id="btnRegister">Registrar</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
+<!-- Content -->

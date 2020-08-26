@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 
 @Component({
@@ -8,9 +8,16 @@ import { MenuController } from '@ionic/angular';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private menu:MenuController) { }
+  @Input() menuOpen:boolean;
+  constructor(private menu:MenuController) {
+    
+    
+   }
 
-  ngOnInit() {
-    this.menu.open();
+  ngOnInit() { 
+    console.log(this.menuOpen);
+    if(this.menuOpen){
+      this.menu.open();
+    }
   }
 }
